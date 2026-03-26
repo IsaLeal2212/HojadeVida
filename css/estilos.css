@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #eef2f7;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.sheet {
+    width: min(1020px, 100%);
+    display: grid;
+    grid-template-columns: 34% 66%;
+    min-height: 980px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, .14);
+}
+
+/* IZQUIERDA */
+.left {
+    background: linear-gradient(180deg, #0f141a, #141b23);
+    color: white;
+    padding: 26px 22px;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, .12);
+    object-fit: cover;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: .95rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    opacity: .55;
+    margin: 18px 0 10px;
+}
+
+.item {
+    margin: 10px 0;
+    font-size: .93rem;
+}
+
+.ref-nombre {
+    font-weight: 900;
+}
+
+.ref-info {
+    color: rgba(255, 255, 255, .75);
+}
+
+.web {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* DERECHA */
+.right {
+    padding: 28px 34px;
+}
+
+.nombre {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.profesion {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.linea {
+    height: 2px;
+    background: black;
+    margin: 10px 0;
+}
+
+.linea-fina {
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.chip {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.idiomas {
+    display: flex;
+    gap: 10px;
+}
+
+.lang {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
